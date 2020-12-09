@@ -5,9 +5,13 @@
 #
 
 $(call inherit-product, device/xiaomi/curtana/device.mk)
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_curtana
+TARGET_INCLUDE_WIFI_EXT := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_BOOT_ANIMATION_RES := 1080
+
+PRODUCT_NAME := aosp_curtana
 PRODUCT_DEVICE := curtana
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := SM6250
